@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.boomButton {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  background-color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.resetButton {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  background-color: red;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+}
+
+.enhance {
+  position: absolute;
+  left: 40px;
+  top: 140px;
+  background-color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+}
+
+.explodingFrame {
+  height: 1500px;
+  width: 800px;
+  margin: 90px auto 0;
+  position: relative;
+}
+
+.layer {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -250px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.boom .layer {
+  left: 50% !important;
+  margin-left: -250px !important;
+  top: 50% !important;
+  margin-top: -250px !important;
+}
+
+.boom.enhanced .layer {
+  opacity: .3;
+}
+
+/*.one {
+  z-index: 10;
+  background-image: url("http://i67.tinypic.com/2vsgf2h.gif");
+}*/
+
+.two {
+  z-index: 9;
+  background-image: url("../media/battersea4.png");
+  left: 400px;
+  top: 280px;
+  transform: rotatez(-310deg) skewY(150deg);
+}
+
+.three {
+  z-index: 8;
+  background-image: url("../media/battersea3.png");
+  left: 500px;
+  top: 320px;
+  transform: rotatez(-310deg) skewY(150deg);
+}
+
+.four {
+  z-index: 7;
+  background-image: url("../media/battersea2.png");
+  left: 500px;
+  top: 450px;
+  transform: rotatez(-310deg) skewY(150deg);
+}
+
+.boom.enhanced .four {
+  height: 1500px !important;
+  width: 778px !important;
+  margin-left: -335px !important;
+  margin-top: -270px !important;
+  opacity: 1;
+  z-index: 20
+}
+
+.five {
+  z-index: 6;
+  background-image: url("../media/battersea1.png");
+  margin-left: 50px;
+  left: 120px;
+  top: 700px; 
+  transform: rotatez(-310deg) skewY(150deg);
+}
+
+.layer.complete {
+  z-index: 11;
+  background-image: url("../media/battersea.png");
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  -o-transition: all ease 1.3s;
+  transition: all ease 1.3s;
+}
+
+.boom .complete {
+  opacity: 0;
+}
